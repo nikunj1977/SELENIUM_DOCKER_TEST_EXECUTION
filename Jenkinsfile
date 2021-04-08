@@ -4,7 +4,7 @@ pipeline{
 		stage("PULL LATEST IMAGE"){
 			steps{
 				echo 'STEP_1 --> PULLING LATES IMAGE FROM DOCKERHUB...'	
-				bat "docker pull nbtest011/seleniumdocker_latest"
+				bat "docker pull nbtest011/seleniumdocker"
 			}
 		}
 		stage("STARTING SELENIUM GRID"){
